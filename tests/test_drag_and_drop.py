@@ -4,6 +4,11 @@ from pages.Heroku_Page import HerokuPage
 
 
 def test_displayed(browser):
+      '''
+    Open the Heroku website / Heroku website is opened
+    1. Click on drag and drop/ Drag and drop page is opened
+    2. Check if column A and column B are displayed/ Both are displayed
+    '''
     heroku_page = HerokuPage(browser)
     heroku_page.go_to_heroku_page()
     drag_and_drop_page = heroku_page.go_to_drag_and_drop()
@@ -11,11 +16,6 @@ def test_displayed(browser):
     assert drag_and_drop_page.is_b_column_displayed()
 
 
-def test_move_columns(browser):
-    heroku_page = HerokuPage(browser)
-    heroku_page.go_to_heroku_page()
-    drag_and_drop_page = heroku_page.go_to_drag_and_drop()
-    drag_and_drop_page.column_a_move_to_b()
 
 
 
