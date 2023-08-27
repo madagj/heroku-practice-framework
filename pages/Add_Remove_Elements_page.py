@@ -30,6 +30,10 @@ class AddRemoveElementsPage(BasePage):
     def get_number_of_delete_button(self):
         return len(self.browser.find_elements(*self.DELETE_BUTTON))
 
+        def delete_button(self):
+        return self.browser.find_element(*self.DELETE_BUTTON).is_displayed()
+        
+
 
 
 
