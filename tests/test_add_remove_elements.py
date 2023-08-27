@@ -13,7 +13,7 @@ def test_delete_button_is_displayed(browser):
     heroku_page.go_to_heroku_page()
     add_element_page = heroku_page.go_to_add_remove_elements_page()
     add_element_page.click_add_button()
-    assert add_element_page.is_delete_button_displayed(), "Delete button is not displayed"
+    assert add_element_page.delete_button(), "Delete button is not displayed"
 
 
 def test_add_remove_delete_button(browser):
